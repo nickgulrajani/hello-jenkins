@@ -3,10 +3,10 @@ package main
 import (
 	"fmt"
 
-	"github.com/larkintuckerllc/hello-jenkins/sum"
+	"github.com/hello-jenkins-larkintuckerllc/hello-jenkins/sum"
 )
 
 func main() {
-	s := sum.Sum(2, 3)
+	s := sum.Sum(1, 2)
 	fmt.Println(s)
 }

@@ -1,3 +1,3 @@
-module github.com/larkintuckerllc/hello-jenkins
+module github.com/hello-jenkins-larkintuckerllc/hello-jenkins
 
 go 1.14
