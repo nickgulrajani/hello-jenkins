@@ -4,15 +4,10 @@ pipeline {
         GOCACHE = '/tmp/gocache'
     }
     stages {
-        stage('build') {
+        stage('build-test') {
             agent { docker { image 'golang:1.14' } }
             steps {
                 sh 'go build'
-            }
-        }
-        stage('test') {
-            agent { docker { image 'golang:1.14' } }
-            steps {
                 sh 'go test ./...'
             }
         }
