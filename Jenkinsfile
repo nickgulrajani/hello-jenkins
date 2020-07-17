@@ -9,7 +9,7 @@ pipeline {
                 sh 'go build'
             }
         }
-        stage('build') {
+        stage('test') {
             steps {
                 sh 'go test ./...'
             }
