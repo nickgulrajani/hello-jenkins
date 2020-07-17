@@ -4,9 +4,13 @@ pipeline {
         GOCACHE = '/tmp/gocache'
     }
     stages {
-        stage('build-test') {
+        stage('build') {
             steps {
                 sh 'go build'
+            }
+        }
+        stage('build') {
+            steps {
                 sh 'go test ./...'
             }
         }
