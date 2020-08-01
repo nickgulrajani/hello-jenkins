@@ -25,7 +25,7 @@ pipeline {
             steps {
                 script {
                     docker.withRegistry('', 'dhubid') {
-                        def customImage = docker.build("sckmkny/hello-jenkins:$VERSION_MAJOR.$VERSION_MINOR.$VERSION_PATCH")
+                        def customImage = docker.build("nicholasgull/hello-jenkins:$VERSION_MAJOR.$VERSION_MINOR.$VERSION_PATCH")
                         customImage.push()
                     }
                 }
