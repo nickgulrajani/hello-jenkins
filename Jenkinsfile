@@ -4,7 +4,6 @@ pipeline {
         stage('build and test') {
             agent { 
                 docker { 
-                    label 'docker'
                     image 'golang:1.14' 
                         }
                              }
